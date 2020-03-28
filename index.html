@@ -1,0 +1,36 @@
+<!Doctype html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://image.flaticon.com/icons/png/128/785/785116.png">
+  <title>TameThatFlame</title>
+  <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" type="text/css" />
+  <link rel=¨stylesheet¨ href=¨assets/map.css¨ type=¨text/css¨ />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.js"></script>
+</head>
+
+<body>
+  <div id="map" style="height: 90vh"></div>
+  <script src="src/map.js"></script>
+  <input type="button" id="undo_button" style="position: fixed; top:50; z-index:2;" />
+  <div class="container" style="display: flex; align-items: center; justify-content: center; margin-top: 20px;">
+    <div class="columns">
+      <div class="column">
+        <input class="input" type="text" placeholder="Name" id="n_in">
+      </div>
+      <div class="column">
+        <input class="input" type="text" placeholder="Contact" id="c_in">
+      </div>
+      <div class="column">
+        <button class="button is-link"
+          onclick="contact_var = document.getElementById('c_in').value; name_var = document.getElementById('n_in').value;">Save
+          Details</button>
+      </div>
+      <div class="column">
+        <button class="button is-danger" onclick="location.reload()">Submit</button>
+      </div>
+    </div>
+</body>
+
+</html>
